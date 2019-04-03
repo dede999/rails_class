@@ -9,7 +9,7 @@ DeviseTokenAuth.setup do |config|
 
   # By default, users will need to re-authenticate after 2 weeks. This setting
   # determines how long tokens will remain valid after they are issued.
-  config.token_lifespan = 12.hours
+  config.token_lifespan = 1.day
 
   # Sets the max number of concurrent devices per user, which is 10 by default.
   # After this limit is reached, the oldest tokens will be removed.
@@ -50,5 +50,5 @@ DeviseTokenAuth.setup do |config|
   # If, however, you wish to integrate with legacy Devise authentication, you can
   # do so by enabling this flag. NOTE: This feature is highly experimental!
   # config.enable_standard_devise_support = false
-  remove_tokens_after_password_reset = true
+  # remove_tokens_after_password_reset = true
 end
